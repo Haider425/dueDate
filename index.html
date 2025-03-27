@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@latest"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="script/script.js" defer></script>
+    <title>Submission Deadline Calculator</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="title">
+            <h1>Test Centre and Integrated Services - <br> Submission Deadline Calculator</h1>
+        </div>
+        <div class="description">
+            <p>This tool helps you calculate the deadline to submit exam instructions <br> and/or materials (3 business days before the exam date)</p>
+        </div>
+
+        <div class="input-container">
+            <div class="date">
+                <label for="date">Select Your Exam Date</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="button">
+                <button >Calculate</button>
+            </div>
+        </div>
+
+        <div class="output-container">
+            <div class="output">
+                <label for="output">Submission Deadline:</label>
+                <p id="output">—</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
