@@ -113,7 +113,7 @@ body {
 }
 
 .input-container input {
-    width: 100%;
+    width: 45%;
     max-width: 650px;
     padding: 1rem;
     font-size: 1rem;
@@ -189,7 +189,7 @@ body {
         position: relative;
         top: 0;
         left: 0;
-        margin-bottom: .5rem;
+        margin-bottom: .05rem;
         align-self: flex-start;
     }
     .logo img {
@@ -200,23 +200,28 @@ body {
         justify-content: flex-start;
     }
     .container .title h1 {
-        font-size: 1rem;
+        font-size: 1.5rem !important;
         br {display:none}
     }
     .container .description {
-        font-size: 1rem;
+        font-size: .8rem !important;
         width: 100%;
         word-wrap: break-word;
         br {display:none}
     }
     .input-container label {
         font-size: 1.25rem;
+        margin-top: 1.2rem;
     }
     .input-container button {
         font-size: 1rem;
         padding: 1rem 1.8rem;
     }
     .output-container {
+        width: 100%;
+    }
+
+    .input-container input {
         width: 100%;
     }
 }
@@ -243,7 +248,14 @@ body {
     }
     .input-container button {
         font-size: 1rem;
-        padding: 10px;
+        
+    }
+    .output-container {
+        width: 100%;
+    }
+
+    .input-container input {
+        width: 100%;
     }
 }
 
