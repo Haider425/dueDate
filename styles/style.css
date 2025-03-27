@@ -181,156 +181,132 @@ body {
 }
 
 /* Responsive Design */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 480px) {
+    .nav{
+        padding: 10px 10px;
+    }
+    .logo {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: .5rem;
+        align-self: flex-start;
+    }
+    .logo img {
+        width: 200px;
+        height: auto;
+    }
     .container {
-        width: 100%;
-        padding: 20px;
+        justify-content: flex-start;
     }
-
     .container .title h1 {
-        font-size: 2.5rem;
-    }
-
-    .container .description {
-        font-size: 1.3rem;
+        font-size: 1rem;
         br {display:none}
     }
-
+    .container .description {
+        font-size: 1rem;
+        width: 100%;
+        word-wrap: break-word;
+        br {display:none}
+    }
     .input-container label {
-        font-size: 1.4rem;
+        font-size: 1.25rem;
     }
-
     .input-container button {
-        font-size: 1.2rem;
-        padding: 1rem 2rem;
+        font-size: 1rem;
+        padding: 1rem 1.8rem;
     }
-    
+    .output-container {
+        width: 100%;
+    }
 }
 
-@media (max-width: 768px) {
+/* Tablet Styles */
+@media screen and (max-width: 768px) {
     .container {
         width: 100%;
         padding: 20px;
     }
-
-
     .container .title h1 {
         font-size: 2rem;
         word-wrap: break-word;
         br {display:none}
     }
-
     .container .description {
         font-size: 1.1rem;
         word-wrap: break-word;
         width: 100%;
         br {display:none}
     }
-
     .input-container label {
         font-size: 1.2rem;
     }
-
     .input-container button {
         font-size: 1rem;
         padding: 10px;
     }
 }
 
-@media (max-width: 480px) {
-    .logo {
-        position: relative;
-        top: 0;
-        left: 0;
-        margin-bottom: 2.5rem;
-        align-self: flex-start;
-    }
-
-    .logo img {
-        width: 200px;
-        height: auto;
-    }
-
-    .container {
-        justify-content: flex-start;
-    }
-    .container .title h1 {
-        font-size: 1.8rem;
-        br {display:none}
-    }
-
-    .container .description {
-        font-size: 1rem;
-        width: 100%;
-        word-wrap: break-word;
-        br {display:none}
-    }
-
-    .input-container label {
-        font-size: 1.25rem;
-    }
-
-    .input-container button {
-        font-size: 1rem;
-        padding: 1rem 1.8rem;
-        
-    }
-
-    .output-container {
-        width: 100%;
-    }
-} 
-
-
-/* mobile responsive for 1440p */
-@media (max-width: 2560px) {
+/* Desktop Styles */
+@media screen and (min-width: 1024px) {
     .container {
         width: 100%;
         padding: 20px;
     }
-
     .container .title h1 {
         font-size: 2.5rem;
     }
-
     .container .description {
         font-size: 1.3rem;
+        br {display:none}
     }
-
     .input-container label {
         font-size: 1.4rem;
     }
-
     .input-container button {
         font-size: 1.2rem;
         padding: 1rem 2rem;
     }
-    
 }
 
-/* mobile responsive for 4k */
-
-@media (max-width: 3840px) {
+/* 1440p Styles */
+@media screen and (min-width: 2560px) {
     .container {
         width: 100%;
         padding: 20px;
     }
-
     .container .title h1 {
         font-size: 2.5rem;
     }
-
     .container .description {
         font-size: 1.3rem;
     }
-
     .input-container label {
         font-size: 1.4rem;
     }
-
     .input-container button {
         font-size: 1.2rem;
         padding: 1rem 2rem;
     }
-    
-} 
+}
+
+/* 4K Styles */
+@media screen and (min-width: 3840px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+    .container .title h1 {
+        font-size: 2.5rem;
+    }
+    .container .description {
+        font-size: 1.3rem;
+    }
+    .input-container label {
+        font-size: 1.4rem;
+    }
+    .input-container button {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+    }
+}
