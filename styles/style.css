@@ -8,8 +8,8 @@
 
 /* Body Styling */
 body {
-    background: linear-gradient(135deg, #eceff1, #b0bec5);
-    min-height: 100vh;
+    background: #fff;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,23 +18,26 @@ body {
 /* Main Container */
 .container {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background: #fff;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); */
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
 }
 
 /* Logo */
 .logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    align-self: flex-start;
+    
 }
 
 .logo img {
@@ -166,6 +169,31 @@ body {
 }
 
 /* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .container .title h1 {
+        font-size: 2.5rem;
+    }
+
+    .container .description {
+        font-size: 1.3rem;
+    }
+
+    .input-container label {
+        font-size: 1.4rem;
+    }
+
+    .input-container button {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+    }
+    
+}
+
 @media (max-width: 768px) {
     .container {
         width: 100%;
@@ -174,6 +202,8 @@ body {
 
     .container .title h1 {
         font-size: 2rem;
+        word-wrap: break-word;
+        br {display:none}
     }
 
     .container .description {
@@ -195,7 +225,7 @@ body {
         position: relative;
         top: 0;
         left: 0;
-        margin-bottom: 5rem;
+        margin-bottom: 2.5rem;
         align-self: flex-start;
     }
 
