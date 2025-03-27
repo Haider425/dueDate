@@ -189,3 +189,48 @@ body {
         padding: 10px;
     }
 }
+
+@media (max-width: 480px) {
+    .logo {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 5rem;
+        align-self: flex-start;
+    }
+
+    .logo img {
+        width: 200px;
+        height: auto;
+    }
+
+    .container {
+        justify-content: flex-start;
+    }
+    .container .title h1 {
+        font-size: 1.8rem;
+        br {display:none}
+    }
+
+    .container .description {
+        font-size: 1rem;
+        width: 100%;
+        word-wrap: break-word;
+        br {display:none}
+    }
+
+    .input-container label {
+        font-size: 1.25rem;
+    }
+
+    .input-container button {
+        font-size: 1rem;
+        padding: 1rem 1.8rem;
+        
+    }
+
+    .output-container {
+        width: 100%;
+    }
+} 
+
